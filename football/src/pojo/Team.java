@@ -7,8 +7,15 @@ public class Team {
 	 private Integer total;
 	 
 	 public void play(){
-		 System.out.println("play");;
+		 System.out.println("play");
 		 
+	 }
+	 
+	 public Team(){
+		 
+		 this.name = name;
+		 this.gender = gender;
+		 this.total = total;
 	 }
 
 	public String getName() {

@@ -5,9 +5,20 @@ public class player {
 	private String name;
 	
 	public void kick(){
-		 System.out.println("kick");;
+		 System.out.println("kick");
+		 
+		 
 	}
 
+	public player(){
+		
+		this.name = name;
+		this.age = age;
+		
+	}
+	
+	
+	
 	public Integer getAge() {
 		return age;
 	}

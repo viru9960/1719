@@ -11,6 +11,18 @@ public class volunteers {
 		System.out.println("help");;
 		
 	}
+	
+	 public volunteers(){
+		 
+		this.name = name;
+		this.age = age;
+		this.designation = designation;
+		this.gender = gender;
+		
+		 
+		 
+	 }
+	
 
 	public String getName() {
 		return name;

@@ -10,7 +10,14 @@ public class stadium {
    
 		System.out.println("allowPlay");
 	}
-
+    
+	 public stadium(){
+		 this.capacity = capacity;
+		 this.condition = condition;
+		 this.availability = availability;
+		 
+	 }
+	
 	public Integer getCapacity() {
 		return capacity;
 	}

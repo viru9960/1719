@@ -8,6 +8,13 @@ public class ball {
 	  public void shot(){
 		  System.out.println("shot");;
 	  }
+	  
+	  public ball(){
+		  this.size = size;
+		  this.pattern = pattern;
+		  
+		  
+	  }
 
 	public Integer getSize() {
 		return size;

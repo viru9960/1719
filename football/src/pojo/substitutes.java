@@ -11,6 +11,15 @@ public class substitutes {
 		System.out.println("replace");
 		;
 	}
+	
+	public substitutes(){
+		
+		this.name = name;
+		this.condition = condition;
+		this.age = age;
+		this.playPosition = playPosition;
+		
+	}
 
 	public String getName() {
 		return name;
