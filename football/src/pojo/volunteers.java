@@ -8,7 +8,7 @@ public class volunteers {
 	private String gender;
 	
 	public void help(){
-		System.out.println("help");
+		System.out.println("help");;
 		
 	}
 

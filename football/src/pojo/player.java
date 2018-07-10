@@ -5,7 +5,7 @@ public class player {
 	private String name;
 	
 	public void kick(){
-		 System.out.println("kick");
+		 System.out.println("kick");;
 	}
 
 	public Integer getAge() {

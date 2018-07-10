@@ -4,7 +4,7 @@ public class stadium {
 	
 	private Integer capacity;
 	private String condition;
-	private String availability;
+	private String availability;;
 	
 	public void allowPlay(){
    

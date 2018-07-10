@@ -9,7 +9,7 @@ public class substitutes {
 	
 	public void replace(){
 		System.out.println("replace");
-		
+		;
 	}
 
 	public String getName() {

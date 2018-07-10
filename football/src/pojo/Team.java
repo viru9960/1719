@@ -7,7 +7,7 @@ public class Team {
 	 private Integer total;
 	 
 	 public void play(){
-		 System.out.println("play");
+		 System.out.println("play");;
 		 
 	 }
 

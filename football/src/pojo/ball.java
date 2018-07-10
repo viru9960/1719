@@ -6,7 +6,7 @@ public class ball {
 	  private String pattern;
 	  
 	  public void shot(){
-		  System.out.println("shot");
+		  System.out.println("shot");;
 	  }
 
 	public Integer getSize() {

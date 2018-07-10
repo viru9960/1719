@@ -4,7 +4,7 @@ public class refree {
 
 	private String name;
 	private Integer age;
-	private String designation;
+	private String designation;;
 	private String gender;
 	
 	public void judgement(){
