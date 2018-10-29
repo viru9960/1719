@@ -1,37 +1,65 @@
+package pojo;
+
 import java.io.File;
-import java.io.FileWriter;
-import java.io.Writer;
-import java.util.Scanner;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
 
 
-public class MainApp 
-{
+public class MainApp  {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-         Scanner sc = null;
-         Writer wr =null;
-         
-         try {
-        	 sc = new Scanner(new File("File1.lst"));
-        	 wr = new FileWriter(new File("File2.lst"));
-        	 while(sc.hasNext()) {
-        		String nextLine = sc.nextLine();
-        		wr.write(nextLine + "\n");
-        		System.out.println(nextLine);
-        	 }
-        		
-        	 sc.close();
-        	 wr.flush();
-        	 wr.close();
-        	 }
-        		catch(Exception e) {
-        		e.printStackTrace();
-        			
-        		}	
-         }
-         
+		serialised();
+		deSerialised();
+	}
+
+	private static void serialised() {
+		FileOutputStream fout = null;
+		ObjectOutputStream oout = null;
+		try{
+		 fout= new FileOutputStream(new File("Student.txt"));
+		 oout= new ObjectOutputStream(fout);
+		Student s= new Student(201,"virus Guptaji", null);
+		oout.writeObject(s);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		} finally{
+			try{
+			fout.close();
+			oout.close();
+			}catch(IOException e){
+				e.printStackTrace();;
+			}
+		}
+	}
+	
+	private static void deSerialised() {
+		FileInputStream fin = null;
+		ObjectInputStream oin = null;
+		try{
+		 fin= new FileInputStream(new File("Student.txt"));
+		 oin= new ObjectInputStream(fin);
+		Student s=(Student) oin.readObject();
+		System.out.println("Name = " + s.getName()+"\nRollNo = "+s.getRollno());
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		} finally{
+			try{
+			fin.close();
+			oin.close();
+			}catch(IOException e){
+				e.printStackTrace();;
+			}
+		}
+		
+	}
+
 }
-
-
