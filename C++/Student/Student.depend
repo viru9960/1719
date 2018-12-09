@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1534611246 source:c:\users\mrf\desktop\c++\student\main.cpp
+	<iostream>
+	"Student.h"
+	<string>
+
+1534611211 c:\users\mrf\desktop\c++\student\include\student.h
+	<string>
+
