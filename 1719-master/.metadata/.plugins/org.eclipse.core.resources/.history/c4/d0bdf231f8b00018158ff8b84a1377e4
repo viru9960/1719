@@ -1,0 +1,27 @@
+package array_list;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> team=new ArrayList<>();
+		
+	team.add("ram");
+	team.add("rohan");
+	team.add("sahil");
+	
+//	System.out.println("player names are");
+	for(String i :team)
+	{
+		System.out.println(""+i);
+	}
+		
+		
+	}
+	System.out.println("==========================");
+	
+	
+}

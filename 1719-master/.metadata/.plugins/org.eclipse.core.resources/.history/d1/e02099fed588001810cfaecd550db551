@@ -1,0 +1,19 @@
+package factorial;
+
+public class Factorial {
+	
+	int i=0;fact;
+	
+	Factorial(int fac)
+	{
+		fact=fac;
+	}
+	
+	void print_factorial()
+	{
+		
+	}
+	
+	
+
+}

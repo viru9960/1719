@@ -1,0 +1,29 @@
+package factorial;
+
+static public class Factorial {
+	
+	int fact;
+	
+	Factorial(int fac)
+	{
+		fact=fac;
+	}
+	
+	void print_factorial()
+	{
+		
+		int result=1;
+		
+	
+		
+		for (int i = 1; i <= fact; i++)
+		{
+		    result = result * i;
+		}
+		
+		System.out.println("FACTORIAL="+result);
+	}
+	
+	
+
+}

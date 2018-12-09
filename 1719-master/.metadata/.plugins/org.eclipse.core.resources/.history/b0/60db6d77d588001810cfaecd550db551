@@ -1,0 +1,14 @@
+package factorial;
+
+public class Factorial {
+	
+	int fact;
+	
+	Factorial(int fac)
+	{
+		fact=fac;
+	}
+	
+	
+
+}
